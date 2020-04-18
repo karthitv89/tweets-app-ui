@@ -11,7 +11,8 @@ export class ProductComponent implements OnInit {
     new Product('apple', 10, 't'),
     new Product('Orance', 3, 't'),
     new Product('Peach', 2, 't'),
-    new Product('Car', 25000, 'my car')
+    new Product('Car', 25000, 'my car'),
+    new Product('Love', 8888888888, 'my love')
   ]
   constructor() { }
 
