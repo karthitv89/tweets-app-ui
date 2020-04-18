@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tweets-app-ui';
+ /*  title = 'tweets-app-ui';
+movieName = 'Master'; */
+name= 'angular'
 }

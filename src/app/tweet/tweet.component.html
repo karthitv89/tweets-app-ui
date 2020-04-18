@@ -1,0 +1,15 @@
+<p>tweet works!</p>
+<div *ngFor = 'let tweet of tweets'>
+    {{tweet.name}}
+    <h3>
+        <a [title] = "tweet.text + ' details'">
+            {{tweet.text}}
+        </a>
+    </h3>
+    <h3 *ngIf = 'tweet.retweetCount'>
+        This tweet is retweeted {{tweet.retweetCount}} times!!!
+    </h3>
+    <button (click)="test()">
+        Test
+      </button>
+</div>

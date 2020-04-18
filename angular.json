@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tweets-app-ui"
+    }
+  },
+  "defaultProject": "tweets-app-ui",
+  "cli": {
+    "analytics": "120a4945-a57a-45b0-88e6-6d0caf79b761"
+  }
 }
