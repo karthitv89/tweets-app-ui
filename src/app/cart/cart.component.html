@@ -1,0 +1,7 @@
+<div>Cart</div>
+<div *ngIf="items"> {{items.name}}</div>
+<div *ngIf="!items">No items</div>
+<div *ngFor="let item of items.products| async">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price | currency }}</span>
+</div>

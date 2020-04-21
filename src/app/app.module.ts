@@ -12,25 +12,30 @@ import { ReactiveFormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { CartComponent } from './cart/cart.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { HttpClientModule } from '@angular/common/http'
 
 const routes = [
   {path:'product', component:ProductComponent},
   {path:'products/:productId', component:ProductDetailsComponent},
   {path:'home', component:HomeComponent},
   {path:'contacts', component:ContactsComponent},
-  {path:'about', component:AboutComponent}
+  {path:'about', component:AboutComponent},
+  {path:'cart', component:CartComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
    // TweetComponent,
     ProductComponent
-    ,ProductAlertComponent, ProductDetailsComponent, HomeComponent, AboutComponent, ContactsComponent 
+    ,ProductAlertComponent, ProductDetailsComponent, HomeComponent, AboutComponent, ContactsComponent, CartComponent, TopBarComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

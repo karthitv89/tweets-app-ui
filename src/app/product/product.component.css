@@ -1,0 +1,8 @@
+.product-div {
+    /* display: table-row; */
+    margin: auto;
+    width: 15%;
+    border: 3px solid green;
+    padding: 7px;
+    float:left;
+}
