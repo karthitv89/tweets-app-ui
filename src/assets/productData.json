@@ -1,0 +1,10 @@
+[{
+    "name" : "Apple",
+    "price" : 12,
+    "description" : "ABC"
+},
+{
+    "name" : "Orance",
+    "price" : 10,
+    "description" : "XYZ"
+}]

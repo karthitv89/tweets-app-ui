@@ -14,7 +14,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CartComponent } from './cart/cart.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component'
+//import { TweetComponent } from './tweet/tweet.component';
 
 const routes = [
   {path:'product', component:ProductComponent},
@@ -22,14 +24,23 @@ const routes = [
   {path:'home', component:HomeComponent},
   {path:'contacts', component:ContactsComponent},
   {path:'about', component:AboutComponent},
-  {path:'cart', component:CartComponent}
+  {path:'cart', component:CartComponent},
+  {path:'users', component:UsersComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
-   // TweetComponent,
+   ////TweetComponent,
     ProductComponent
-    ,ProductAlertComponent, ProductDetailsComponent, HomeComponent, AboutComponent, ContactsComponent, CartComponent, TopBarComponent 
+    ,ProductAlertComponent, 
+    ProductDetailsComponent, 
+    HomeComponent, 
+    AboutComponent, 
+    ContactsComponent, 
+    CartComponent, 
+    TopBarComponent, 
+    UsersComponent 
+
   ],
   imports: [
     BrowserModule,

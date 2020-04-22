@@ -1,0 +1,27 @@
+<p>users works!</p>
+<button (click)="loadUsers()">Load Users</button>
+<div *ngIf="users" class="user-list">
+    <table id="users">
+        <thead>
+          <tr>
+            <th class="first">Photo</th>
+            <th class="second">Name</th>
+            <th class="third">Email</th>
+            <!-- <th class="fourth">Line Total</th> -->
+             <th class="fifth">&nbsp;</th>
+          </tr>
+        </thead>
+       
+    <div *ngFor="let user of users"> 
+        <tr class="userItem">
+            <td><img src="{{user.avatar}}" class="thumb"></td>
+            <!-- <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td> -->
+            <td>{{user.first_name}} {{user.last_name}}</td>
+            <td> {{user.email}}</td>
+            <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
+        </tr>
+ 
+    </div>
+    </table>
+</div>
+
